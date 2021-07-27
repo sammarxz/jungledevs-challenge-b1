@@ -1,24 +1,21 @@
 import {createGlobalStyle} from 'styled-components'
 
-const GlobalStyles = createGlobalStyle`
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+import Reset from 'styles/Reset'
+import Typography from 'styles/Typography'
 
-html {
-  font-size: 62.5%;
-}
+import {Colors, Flex, Positions, Spacings, Text} from 'styles/Helpers'
 
-html, body, #__next {
-  height: 100%;
-}
+const GlobalStyle = createGlobalStyle`
+/* BASE */
+${Reset}
+${Typography}
 
-body {
-  font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+/* HELPERS */
+${Colors}
+${Flex}
+${Positions}
+${Spacings}
+${Text}
 `
 
-export {GlobalStyles}
+export default GlobalStyle
