@@ -1,4 +1,8 @@
 {
   "extends": ["next", "next/core-web-vitals"],
-  "rules": {}
+  "rules": {},
+  "env": {
+    "jest": true,
+    "node": true
+  }
 }

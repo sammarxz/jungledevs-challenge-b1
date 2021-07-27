@@ -15,7 +15,6 @@ const Spacings = css`
       .m${dir[0]}--${size}{
         margin-${dir}: ${size}px;
       }
-
       .p${dir[0]}--${size}{
         padding-${dir}: ${size}px;
       }
