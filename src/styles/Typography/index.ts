@@ -4,7 +4,8 @@ const Typography = css`
   body {
     font-family: ${({theme}) => theme.text.font};
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: ${({theme}) => theme.colors.gray};
   }
   p {
     margin-bottom: 1.15rem;
@@ -18,14 +19,14 @@ const Typography = css`
   h3,
   h4,
   h5 {
-    line-height: 1;
+    line-height: 1.2;
+    font-weight: 500;
   }
   h1 {
     font-size: 2rem;
-    line-height: 1.2;
   }
   h2 {
-    font-size: 1.44rem;
+    font-size: 1.6rem;
   }
   h3 {
     font-size: 1.2rem;
@@ -41,7 +42,7 @@ const Typography = css`
       font-size: 2.6rem;
     }
     h2 {
-      font-size: 1.728rem;
+      font-size: 1.8rem;
     }
     h3 {
       font-size: 1.44rem;

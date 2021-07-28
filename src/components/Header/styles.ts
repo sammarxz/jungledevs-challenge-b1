@@ -34,11 +34,9 @@ export const Wrapper = styled.header<WrapperProps>`
     padding: 9rem 0 4rem 0;
     mix-blend-mode: overlay;
     overflow: hidden;
-    text-align: center;
 
     ${media.greaterThan('medium')`
       padding: 10rem 0 8rem 0;
-      text-align: left;
     `}
 
     &:after {

@@ -31,6 +31,10 @@ const Spacings = css`
   .pl--0 {
     padding-left: 0;
   }
+  .mx--auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
   ${({theme}) =>
     Object.keys(theme.spacings).map(
       key => css`
