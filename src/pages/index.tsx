@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import {Header, Nav, Container, Button, Split} from 'components'
+import Link from 'next/link'
+import {Header, Nav, Container, Button, Split, Avatar} from 'components'
 
 export default function Home() {
   return (
@@ -49,6 +50,22 @@ export default function Home() {
           </Container>
         </>
       </Header>
+      <section className="d--flex ai--center jc--center wrap bg--white bt--1 bb--1 bc--lightGray pt--large pb--large ta--center fw--500">
+        <Avatar
+          image="/img/users/sarah.png"
+          alt="Sarah"
+          hasBoxShadow
+          className="mr--xsmall"
+        />
+        <Link href="#">
+          <a className="c--secondary td--underline">
+            Sarah’s day care available now in North Sydney
+          </a>
+        </Link>
+        <time className="ml--xxsmall">
+          Wednesday, Thursday, Friday - 7:30 - 5:30
+        </time>
+      </section>
     </div>
   )
 }
