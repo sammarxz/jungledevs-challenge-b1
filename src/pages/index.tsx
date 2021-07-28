@@ -9,6 +9,7 @@ import {
   Avatar,
   Section,
   Divider,
+  Footer,
 } from 'components'
 
 export default function Home() {
@@ -177,7 +178,7 @@ export default function Home() {
               />
             </div>
             <h2 className="mb--small">Coming soon: Nanny Share Daily Diary!</h2>
-            <p className="mw--800 mx--auto mb--small">
+            <p className="mw--800 mx--auto mb--0">
               With the Hapu daily diary your nanny will be able to update you
               and your sharers with photos and commentary of the day. You and
               sharers will receive notifications and you’ll be able to login to
@@ -186,6 +187,37 @@ export default function Home() {
           </Section>
         </Container>
       </div>
+      <Section className="bg--white ta--center">
+        <Container>
+          <h2 className="mb--small">Become a nanny share host</h2>
+          <p className="mb--medium">Takes less than 5 minutes to get started</p>
+          <Button
+            color="secondary"
+            icon={
+              <Image
+                src="/img/icons/Calendar.svg"
+                alt="Calendar Icon"
+                width={30}
+                height={30}
+              />
+            }
+          >
+            Create Your Nanny Share
+            <span className="d--block fs--xsmall fw--400">
+              Takes less than 5 minutes
+            </span>
+          </Button>
+          <br />
+          <Link href="#">
+            <a className="c--secondary td--underline fw--500 d--inline-block mt--small">
+              Or browse local nanny-shares
+            </a>
+          </Link>
+        </Container>
+      </Section>
+      <Container>
+        <Footer />
+      </Container>
     </div>
   )
 }

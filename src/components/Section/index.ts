@@ -6,7 +6,7 @@ export const Section = styled.section`
     padding: ${theme.spacings.large} 0;
 
     ${media.greaterThan('medium')`
-      padding: ${theme.spacings.xxlarge} 0;
+      padding: calc(${theme.spacings.xxlarge} * 1.4) 0;
     `}
   `}
 `

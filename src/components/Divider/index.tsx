@@ -6,11 +6,10 @@ export const Divider = styled.div`
     background-color: ${theme.colors.midGray};
     width: 100%;
     height: 2px;
-    margin: ${theme.spacings.small} auto;
+    margin: 0 auto;
 
     ${media.greaterThan('medium')`
-      width: 784px;
-      margin: ${theme.spacings.medium} auto;
+      width: 800px;
     `}
   `}
 `

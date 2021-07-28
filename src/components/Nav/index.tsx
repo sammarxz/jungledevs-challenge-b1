@@ -4,7 +4,11 @@ import * as S from './styles'
 
 import {Logo, Button} from '../'
 
-export function Nav() {
+type navProps = {
+  className?: string
+}
+
+export function Nav({className}: navProps) {
   const menuOptions = [
     {
       name: 'Create Your Nanny Share',
@@ -21,7 +25,7 @@ export function Nav() {
   ]
 
   return (
-    <S.Wrapper>
+    <S.Wrapper className={className}>
       <div className="d--flex ai--center">
         <Link href="/">
           <a>
