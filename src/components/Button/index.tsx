@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  color?: 'primary' | 'secondary'
+  color?: 'primary' | 'secondary' | 'transparent'
   isFullWidth?: boolean
   icon?: JSX.Element
 }

@@ -2,7 +2,7 @@ import * as S from './styles'
 
 export type HeaderProps = {
   children: JSX.Element
-  color: 'primary' | 'secondary'
+  color?: 'primary' | 'secondary'
   bgImage?: string
   className?: string
 }

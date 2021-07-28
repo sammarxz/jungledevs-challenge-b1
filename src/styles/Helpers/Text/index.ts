@@ -12,6 +12,12 @@ const Text = css`
   .tt--uppercase {
     text-transform: uppercase;
   }
+  .td--underline {
+    text-decoration: underline;
+  }
+  .ta--center {
+    text-align: center;
+  }
   .fw--500 {
     font-weight: 500;
   }

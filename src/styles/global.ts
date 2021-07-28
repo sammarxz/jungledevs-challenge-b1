@@ -3,7 +3,16 @@ import {createGlobalStyle} from 'styled-components'
 import Reset from 'styles/Reset'
 import Typography from 'styles/Typography'
 
-import {Colors, Displays, Flex, Positions, Spacings, Text} from 'styles/Helpers'
+import {
+  Colors,
+  Displays,
+  Flex,
+  Positions,
+  Spacings,
+  Text,
+  Responsive,
+  Sizes,
+} from 'styles/Helpers'
 
 const GlobalStyle = createGlobalStyle`
 /* BASE */
@@ -17,6 +26,8 @@ ${Flex}
 ${Positions}
 ${Spacings}
 ${Text}
+${Sizes}
+${Responsive}
 `
 
 export default GlobalStyle
