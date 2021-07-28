@@ -7,16 +7,40 @@ const Spacings = css`
   .p--0 {
     padding: 0;
   }
+  .mt--0 {
+    margin-top: 0;
+  }
+  .mr--0 {
+    margin-right: 0;
+  }
+  .mb--0 {
+    margin-bottom: 0;
+  }
+  .ml--0 {
+    margin-left: 0;
+  }
+  .pt--0 {
+    paddint-top: 0;
+  }
+  .pr--0 {
+    padding-right: 0;
+  }
+  .pb--0 {
+    padding-bottom: 0;
+  }
+  .pl--0 {
+    padding-left: 0;
+  }
   ${({theme}) =>
-    theme.spacings.map(
-      size => css`
+    Object.keys(theme.spacings).map(
+      key => css`
         ${['top', 'right', 'bottom', 'left'].map(
           dir => css`
-      .m${dir[0]}--${size}{
-        margin-${dir}: ${size}px;
+      .m${dir[0]}--${key}{
+        margin-${dir}: ${theme.spacings[key]};
       }
-      .p${dir[0]}--${size}{
-        padding-${dir}: ${size}px;
+      .p${dir[0]}--${key}{
+        padding-${dir}: ${theme.spacings[key]};
       }
     `,
         )}

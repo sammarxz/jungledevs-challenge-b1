@@ -1,6 +1,6 @@
 import {DefaultTheme} from 'styled-components'
 
-const theme: DefaultTheme = {
+const theme = {
   colors: {
     primary: '#00A870',
     secondary: '#5E20A4',
@@ -13,8 +13,22 @@ const theme: DefaultTheme = {
   text: {
     font: '"Inter", sans-serif',
     weights: ['400', '500'],
+    sizes: {
+      small: '.8rem',
+      medium: '1rem',
+      large: '2rem',
+      xlarge: '3rem',
+    },
   },
-  spacings: [0, 8, 16, 24, 32, 40, 64, 74, 96],
+  spacings: {
+    xxsmall: '8px',
+    xsmall: '16px',
+    small: '24px',
+    medium: '32px',
+    large: '40px',
+    xlarge: '64px',
+    xxlarge: '74px',
+  },
 }
 
 export default theme
