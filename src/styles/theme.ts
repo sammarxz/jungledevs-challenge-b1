@@ -14,8 +14,9 @@ const theme = {
     font: '"Inter", sans-serif',
     weights: ['400', '500'],
     sizes: {
-      small: '.8rem',
-      medium: '1rem',
+      xsmall: '.8rem',
+      small: '1rem',
+      medium: '1.125rem',
       large: '2rem',
       xlarge: '3rem',
     },
@@ -28,6 +29,10 @@ const theme = {
     large: '40px',
     xlarge: '64px',
     xxlarge: '74px',
+  },
+  container: {
+    normal: '984px',
+    large: '1184px',
   },
 }
 
