@@ -8,7 +8,7 @@ type ContainerProps = {
 }
 
 const containerModifier = {
-  width: (theme: DefaultTheme, size: string) => css`
+  width: (theme: DefaultTheme, size: 'normal' | 'large') => css`
     max-width: ${theme.container[size]};
   `,
 }
