@@ -6,8 +6,6 @@ import GlobalStyle from 'styles/global'
 import theme from 'styles/theme'
 
 function App({Component, pageProps}: AppProps) {
-  console.log('theme', theme)
-
   return (
     <>
       <Head>
@@ -27,7 +25,7 @@ function App({Component, pageProps}: AppProps) {
 
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <link rel="icon" type="image/png" href="/img/icon-512.png" />
+        <link rel="icon" href="/img/favicon.ico" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />

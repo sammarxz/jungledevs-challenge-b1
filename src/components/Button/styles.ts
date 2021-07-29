@@ -42,6 +42,20 @@ export const Wrapper = styled.button<WrapperProps>`
     border-radius: calc(${theme.spacings.xxsmall} / 2);
     font-size: 0.95rem;
     font-weight: 500;
+    filter: brightness(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+
+    &:hover,
+    &:focus {
+      filter: brightness(115%);
+      transform: scale(1.02);
+    }
+
+    &:active {
+      color: #fff;
+      filter: brightness(80%);
+      transform: scale(0.95);
+    }
 
     ${!!isFullWidth && wrapperModifiers.fullWidth()}
     ${!!hasIcon && wrapperModifiers.withIcon(theme)}

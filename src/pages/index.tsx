@@ -5,6 +5,7 @@ import {
   Nav,
   Container,
   Button,
+  Newsletter,
   Split,
   Avatar,
   Section,
@@ -114,6 +115,17 @@ export default function Home() {
                 height={392}
               />
             </Split>
+          </Section>
+          <Divider />
+          <Section className="ta--center">
+            <h3 className="mb--small">
+              Are you a parent without a nanny and looking to share?
+            </h3>
+            <p>
+              Leave us your name and email and we’ll update you as soon as a
+              share becomes available in your area!
+            </p>
+            <Newsletter />
           </Section>
           <Divider />
           <Section>

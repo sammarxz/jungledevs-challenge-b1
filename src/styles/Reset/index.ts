@@ -82,6 +82,21 @@ const Reset = css`
     -webkit-transition-delay: 9999s;
   }
 
+  ${({theme}) => css`
+    ::placeholder {
+      color: ${theme.colors.gray};
+      opacity: 1;
+    }
+
+    :-ms-input-placeholder {
+      color: ${theme.colors.gray};
+    }
+
+    ::-ms-input-placeholder {
+      color: ${theme.colors.gray};
+    }
+  `}
+
   textarea {
     resize: none;
   }
