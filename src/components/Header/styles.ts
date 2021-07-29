@@ -2,7 +2,7 @@ import styled, {css, DefaultTheme} from 'styled-components'
 import media from 'styled-media-query'
 
 type WrapperProps = {
-  color: string
+  color: 'primary' | 'secondary'
   bg?: string
 }
 
