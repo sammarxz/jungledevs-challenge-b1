@@ -36,7 +36,7 @@ const wrapperModifiers = {
 
 export const Wrapper = styled.button<WrapperProps>`
   ${({theme, color, isFullWidth, hasIcon, isOnlyIcon}) => css`
-    background-color: ${theme.colors[color!]};
+    background-color: ${color !== 'transparent' && theme.colors[color!]};
     color: ${theme.colors.white};
     padding: 12px ${theme.spacings.small};
     border-radius: calc(${theme.spacings.xxsmall} / 2);
