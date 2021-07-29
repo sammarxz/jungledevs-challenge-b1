@@ -5,9 +5,9 @@ const Responsive = css`
   .hide--mb {
     display: none;
 
-    ${media.greaterThan('930px')`
+    @media (min-width: 930px) {
       display: inherit;
-    `}
+    }
   }
 `
 
