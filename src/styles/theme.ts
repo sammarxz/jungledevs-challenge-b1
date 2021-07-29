@@ -1,5 +1,3 @@
-import {DefaultTheme} from 'styled-components'
-
 const theme = {
   colors: {
     primary: '#00A870',

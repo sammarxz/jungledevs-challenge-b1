@@ -1,3 +1,4 @@
+/* tslint:disable */
 import {css} from 'styled-components'
 
 const Colors = css`
