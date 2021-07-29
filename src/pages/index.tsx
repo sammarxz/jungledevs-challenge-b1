@@ -13,7 +13,22 @@ import {
   Footer,
 } from 'components'
 
-export default function Home() {
+import {useLocalStorageState} from 'hooks/useLocalStorageState'
+
+import {randomNumber} from 'utils/randomNumber'
+
+type headerDataType = {
+  title: string
+  description: string
+}
+
+type homeProps = {
+  abTest: headerDataType
+}
+
+export default function Home({abTest}: homeProps) {
+  const [headerData] = useLocalStorageState('headerData', abTest)
+
   return (
     <div>
       <Header color="secondary" bgImage="/img/photos/local-nanny-share.png">
@@ -23,12 +38,10 @@ export default function Home() {
             <Split>
               <div className="">
                 <h1 className="fw--500 mb--xsmall mw--600">
-                  Easily create or join a local nanny share with Hapu
+                  {headerData?.title || 'loading'}
                 </h1>
                 <p className="fs--medium mb--large">
-                  Hapu is Airbnb for nanny share. Share your home, nanny and
-                  costs and create new flexible, affordable solutions in
-                  childcare.
+                  {headerData?.description || 'loading'}
                 </p>
                 <div className="mt--small d--flex ai--center">
                   <Button
@@ -232,4 +245,27 @@ export default function Home() {
       </Container>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const headerABTest: headerDataType[] = [
+    {
+      title: 'Easily create or join a local nanny share with Hapu',
+      description:
+        'Hapu is Airbnb for nanny share. Share your home, nanny and costs and create new flexible, affordable solutions in childcare.',
+    },
+    {
+      title: 'Create the childcare you need at a price you can afford',
+      description:
+        'Connect with other local families to share a nanny from as low as $10.00/hr each. Create your family profile today to get started.',
+    },
+  ]
+
+  const abTest = headerABTest[randomNumber(0, 2)]
+
+  return {
+    props: {
+      abTest,
+    },
+  }
 }
