@@ -261,7 +261,7 @@ export async function getStaticProps() {
     },
   ]
 
-  const abTest = headerABTest[randomNumber(0, 2)]
+  const abTest = headerABTest[randomNumber(0, headerABTest.length)]
 
   return {
     props: {
